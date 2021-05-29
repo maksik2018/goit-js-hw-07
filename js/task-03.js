@@ -24,11 +24,33 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
+
 const imagesEl = document.querySelector('#gallery');
+console.log(imagesEl);
 
 images.forEach(el => {
-  imagesEl.insertAdjacentHTML(
-    'afterbegin', //position
-    `<li><img src = "${el.url}" alt = "${el.alt}"  width = "250" height = "200" /></li>`//string
-  );
+
+  imagesEl.insertAdjacentHTML('afterbegin', `<li><img src = "${el.url}" alt = "${el.alt}" width = "250"  height = "250"/> </li>`);
+
+
 });
+
+
+
+
+
+
+
+
+
+
+
+
+// const imagesEl = document.querySelector('#gallery');
+
+// images.forEach(el => {
+//   imagesEl.insertAdjacentHTML(
+//     'afterbegin', //position
+//     `<li><img src = "${el.url}" alt = "${el.alt}"  width = "250" height = "200" /></li>`//string
+//   );
+// });
