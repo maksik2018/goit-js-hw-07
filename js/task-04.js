@@ -17,7 +17,7 @@ const decrement = () => {
     counterEl.textContent = counterValue;// текстовое значение '0' уменьшает
 };
 
-btnIncrementEl.addEventListener('click', increment);
+btnIncrementEl.addEventListener('click', increment);//вешаем слушателя события на кнопки
 btnDecrementEl.addEventListener('click', decrement);
 
 

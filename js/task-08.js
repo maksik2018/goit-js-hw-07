@@ -34,7 +34,8 @@ function onCreateBoxes() {
 };
 
 function OnDestroyBoxes() {
-    boxesEl.innerHTML = '';
+  boxesEl.innerHTML = '';
+  inputEl.value = '';
 };
 
 function random() {
