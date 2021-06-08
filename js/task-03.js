@@ -28,16 +28,14 @@ const images = [
 const imagesEl = document.querySelector('#gallery');
 console.log(imagesEl);
 
-images.forEach(el => {
-
-  imagesEl.insertAdjacentHTML('afterbegin', `<li><img src = "${el.url}" alt = "${el.alt}" width = "250"  height = "250"/> </li>`);
-
-
-});
-
+const imagesSet = ({ url, alt }) => {
+  return `<li><img src = "${url}" alt = "${alt}" width = "250"  height = "250"/> </li>`;
+};
+const pictures = images.map(imagesSet).join('');
+console.log(pictures);
 
 
-
+  imagesEl.insertAdjacentHTML('afterbegin', pictures);
 
 
 
@@ -46,11 +44,11 @@ images.forEach(el => {
 
 
 
-// const imagesEl = document.querySelector('#gallery');
 
-// images.forEach(el => {
-//   imagesEl.insertAdjacentHTML(
-//     'afterbegin', //position
-//     `<li><img src = "${el.url}" alt = "${el.alt}"  width = "250" height = "200" /></li>`//string
-//   );
-// });
+
+
+
+
+
+
+
